@@ -1,0 +1,491 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* THE ABOVE IS USED FOR GO DOWN BUTTON */
+@import url('<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">')
+html{
+    scroll-behavior: smooth;/* tbhis will help to scroll doen by clicking the go down button*/
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+/* THIS FOR HOME PAGE*/
+/*THIS IS FOR SETTING UP THE BACKGROUND IMAGE*/
+.home{
+    height: 100vh;
+    background-image: url(pictures/gym2.jpg);
+    background-size: cover;
+    padding: 15px;
+    -webkit-display: flex;
+
+    display: flex;
+}
+.home .container{
+    -webkit-display: flex;
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
+}
+/* SETTING OF BACKGROUNFD IMAGE ENDS...*/
+
+/*THIS IS FRISTHEADING AND SUBHEADING IN HOME PAGE-START*/
+.home .firstheading{
+    font-size: 60px;
+    font-weight: 700;
+    border: none;
+    color:whitesmoke;
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 12px;
+    
+
+}
+.firstheading span{
+    color: red;
+}
+.home .subheading{
+     font-size: 50px;
+    color: red;
+    margin: -38px;
+    margin-left: 450px;
+}
+/*HERE THE INSERTION OF HEADINGS ENDS..*/
+
+/* THIS IS FOR THE ANIMATION GO DOWN-STARTS */
+.home .container .go-down{
+    position: absolute;
+    bottom: 50px;
+    width: 26px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    left: 50%;
+    margin-left: -13px;
+}
+.home .container .go-down .fa{
+    color: #ffffff;
+    -webkit-animation: goDown 1s ease infinite;
+    animation: goDown 1s ease infinite;
+
+}
+@keyframes goDown{
+    0%{transform: translateY(0); opacity: 0 .5}
+    100%{transform: translateY(10px);}
+
+}
+/* HERE THE GO-DOWN ENIMATION ENDS.. */
+
+/* THIS IS FOR LOGO POSITIONING-STARTS*/
+.left{
+    
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 22px;
+}
+.container .left img{
+    width: 100px;
+    padding-top: 45px;
+
+    
+}
+/*  HERE THE WORK FOR LOGO POSITIONING -ENDS.. */
+
+/* THIS IS FOR MID NAVIGATION BAR-STARTS */
+.mid{
+   
+    display: block;
+    width: 70%;
+    margin: 12px auto;
+    top: 22px;
+    color: white;
+    text-align: center;
+    font-weight: 20px;
+    
+}
+.navbar{
+    cursor: pointer;
+    
+}
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+    font-weight: 30px;
+    
+    
+}
+.navbar li :hover{
+    color: red;
+    background: black;
+    
+    
+}
+.navbar li a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 16px;
+    
+    
+}
+/* HERE NAV BAR ENDS...*/
+
+
+
+/* THIS IS SECOND PAGE THAT IS ABOUT*/
+.about{
+    padding: 80px 12px;
+}
+.about h3{
+    color: black;
+    font-size: 30px;
+    padding-left: 16px;
+    font-style: italic;
+    margin: 25px;
+    margin-top: -37px;
+
+    
+}
+.about .content{
+    /*  this will lay the  content below images in the singe row */
+    display: flex;
+
+}
+.about .content .box{
+    /* this will help me to arranging the text and images.. */
+    flex: 0 0 33.33%;
+    max-width: 31.9%;
+    padding: 15px;
+    width: cover;
+    size: 40px;
+    height: 70vh;
+}
+.about .content .box .inner{
+    background-color: #222222;
+    padding: 10px;
+
+
+    
+
+}
+.about .content .box .inner .text{
+    padding: 20px 15px;
+}
+.about .content .box .inner .text h4{
+    text-align: center;
+    font-weight: 400px;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    padding: 0px 0px 15px;
+
+    text-decoration: underline;
+
+}
+.about .content .box .inner .text p{
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    font-style: italic;
+    letter-spacing: 1px ;
+    margin: 0;
+    font-weight: 300;
+
+}
+
+.about .content .box:nth-child(2){
+    
+}
+.about .content .box:nth-child(2) .inner .text h4{
+    color: black;
+
+}
+.about .content .box:nth-child(2) .inner .text p{
+    color: black;
+}
+
+
+
+.about .content .box:nth-child(2) .inner{
+    background-color: red;
+}
+.about .content .box .inner .img img{
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-bottom: -21px;
+  height: 50vh;
+}
+/* SECOND PAGE ENDS..*/
+/* STARTING OF THIRD PAGE THAT IS SERVICES */
+.services{
+    padding: 80px 15px;
+    background-color: red;
+}
+.services .content{
+    -webkit-display: flex;
+
+    display: flex;
+}
+.services .content .leftsidebox{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+.services .content .leftsidebox h2{
+    font-size: 30px;
+    padding-left: 16px;
+    font-style: italic;
+    margin: 25px;
+    margin-top: -37px;
+    color: white;
+
+
+
+}
+.services .content .leftsidebox p{
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: italic;
+    
+    margin: 0 0 20px;
+    font-weight: 300;    
+    padding-left: 69px;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+}
+.services .content .leftsidebox .btn{
+    padding: 8px 50px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 200px;
+
+}
+.services .content .leftsidebox .btn:hover{
+    background-color:white;
+    color: black;
+
+}
+.rightsidebox .box-container .head h4{
+    font-style: bold;
+    font-weight: bolder;
+    background-color: white;
+}
+ .services .rightsidebox .box-container .body{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Thired page ends... */
+
+/* starting of fourth page */
+
+.schedule{
+    padding: 80px 0px;
+    background-color: black;
+    margin-top: 83px;
+}
+.schedule .content{
+    -webkit-display: flex;
+    display: flex;
+}
+.schedule .content .box-text h2{
+    color: red;
+    font-size: 30px;
+    padding-left: 16px;
+    font-style: italic;
+    margin: 25px;
+    margin-top: -37px;
+    
+
+
+}
+.schedule .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+    padding: 15px;
+}
+.schedule .content .box img{
+    max-width: 100%;
+    border: none;
+   
+}
+.schedule .content .box-timing {
+    color:white;
+    padding-left: 300px;
+    padding-top: 150px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    
+}
+.schedule .content .{
+    width: 100%;
+    
+}
+.schedule .content .timing .table td{
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.schedule .content .timing .table tr:nth-child(1) td.day{
+background-color: white;
+}
+/* Last page Join Now */
+.price{
+    padding: 80px 15px;
+    
+}
+.price h2{
+    color: red;
+    font-size: 30px;
+    padding-left: 16px;
+    font-style: italic;
+    margin: 25px;
+    margin-top: -37px;
+}
+.price .content{
+    display: flex;
+    -webkit-display: flex;
+
+}
+.price .content  .box{
+    flex: 0 0 33.33%;
+    max-width: 31.9%;
+    padding: 15px;
+
+}
+.price .content  .box .inner{
+    background-color:red;
+}
+.price .content  .box .inner h3{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    
+    
+
+}
+.price .content  .box .inner .btn{
+    padding: 8px 50px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-left: center;
+
+}
+.price .content  .box .inner .btn:hover{
+
+    background-color: white;
+    color: black;
+}
+.price .content  .box .inner .text{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: auto;
+    margin-top: -43px;
+}
+/*  Last page */
+.contact{
+    padding: 80px 15px;
+    background-color: black;
+}
+ .contact .container h2{
+    color: red;
+    font-size: 30px;
+    padding-left: 16px;
+    font-style: italic;
+    margin: 25px;
+    margin-top: -37px;   
+}
+
+.contact .content{
+    display: flex;
+    -webkit-display: flex;
+
+}
+.contact .content .box{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+.contact .content .form input, 
+.contact .content .form textarea{
+    height: 45px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 1px solid red;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+
+}
+
+.contact .content .form input::placeholder, 
+.contact .content .form textarea::placeholder{
+    color:white;
+}
+.contact .content .form button{
+
+    border: none;
+    
+    outline: none;
+    height: 45px;
+    padding: 0px 30px;
+    background-color:red;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+
+    }
+    .contact .content .form button:hover{
+    
+    background-color:white;
+    color: black;
+    }
+
+
+
+
+
+
