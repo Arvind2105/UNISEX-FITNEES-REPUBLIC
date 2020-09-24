@@ -51,6 +51,7 @@ header{
     margin: 0;
     margin-top: 20px;
     padding-top: 12px;
+    line-height: 70px;
     
 
 }
@@ -212,9 +213,7 @@ header{
 
 }
 
-.about .content .box:nth-child(2){
-    
-}
+
 .about .content .box:nth-child(2) .inner .text h4{
     color: black;
 
@@ -331,34 +330,42 @@ header{
     flex: 0 0 50%;
     max-width: 50%;
     padding: 15px;
-    padding: 15px;
+    
 }
 .schedule .content .box img{
     max-width: 100%;
     border: none;
    
 }
-.schedule .content .box-timing {
-    color:white;
-    padding-left: 300px;
-    padding-top: 150px;
+.schedule .content .box-timing table{
+    
+    color: white;
+    padding-left: 200px;
+    padding-top: 30px;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-    
-    
-    
-}
-.schedule .content .{
     width: 100%;
+    border-spacing: 50px;
+    border-collapse: separate;
+    ;
     
 }
-.schedule .content .timing .table td{
+
+.schedule .content .timing table td{
     border: 1px solid white;
     padding: 8px;
     font-size: 15px;
     text-align: center;
     
+    
 }
+.schedule .content .box-timing table tr:nth-child(odd)  td.day{
+    background-color:grey;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
 .schedule .content .timing .table tr:nth-child(1) td.day{
 background-color: white;
 }
@@ -478,13 +485,166 @@ background-color: white;
     width: 150px;
 
     }
-    .contact .content .form button:hover{
+.contact .content .form button:hover{
     
     background-color:white;
     color: black;
     }
 
 
+/*
+    responsivesness.....
+
+*/
+/*  FIRST PAGE....................*/
+/* for nav bar*/
+@media only screen and (max-width: 600px){
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        text-align: center;
+        transition: .7s;
+        line-height: normal;
+    }
+
+    .hide-btn {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+
+    #chk:checked~.navbar {
+        right: 0;
+    }
+    .navbar li{
+        display: block;
+    }
+    .navbar li a{
+        float: left;
+        display: block;
+        color: red;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .navbar li :hover{
+        background-color: red;
+        color: black;
+        border-radius: 10px;
+    }
+}
+/* this is for firstheading*/
+@media only screen and (max-width: 600px){
+    .home .firstheading{
+        font-size: 40px;
+        font-weight: 500;
+        border: none;
+        color:whitesmoke;
+        margin: 0;
+        margin-top: 52px;
+        padding-top: 12px;
+        line-height:auto ;
+        
+    
+    }
+    .firstheading span{
+        color: red;
+    }
+    .home .subheading{
+         font-size: 30px;
+        color: red;
+        margin-left:auto;
+        margin-top: 0px;
+    }
+    /* this is for logo*/
+    .left{
+    
+        color: white;
+        display: inline-block;
+        position: absolute;
+        
+        top: 22px;
+    }
+    .container .left img{
+        width: 100px;
+        padding-top: 7px;
+    
+        
+    }
+    /* logo ends*/
+} 
+/*  ...........FIRDT PAGE ENDS.......*/
+/*.................ABOUT PAGE STARTS*/
+
+@media only screen and(max-width: 600px){
+    .about .content .box{
+        
+        flex: 0 0 33.33%;
+        max-width: 31.9%;
+        padding: 15px;
+        width: cover;
+        size: 40px;
+        height: 70vh;
+    }
+    .about .content .box .inner .img img{
+    
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      padding-bottom: -21px;
+      height: auto;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+  
+    .schedule .box-text img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    .schedule .box-timing tbody{
+        margin-left: auto;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .content{
+        width: 100%;
+        
+        height: auto;
+    }
+    .inner{
+        height: 60vh;
+        display: cover;
+        width: 40vh;
+        
+        
+    }
+    .text{
+        height: 40vh;
+        width: auto;
+        text-align: center;
+    }
+    .price{
+    
+       background-size: cover;
+    }
+    .btn{
+        border-radius: 10px;
+    
+    }
+    
+}
 
 
 
